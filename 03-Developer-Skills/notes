@@ -1,0 +1,21 @@
+Prettier- is an opinionated code formatter,
+which means that it makes assumptions
+about how good code should look like.
+-this will make sure
+that your code is nicely formatted.
+-opinionated means that they have a strong opinion
+and then basically, when we use the tool,
+we have to accept that opinion.
+{
+"singleQuote": true,
+"arrowParens": "avoid"
+} in configuration file we have to write this because ora "" use kora instead of ''
+tai manually change kora lagbe. and same for arrow.
+
+-we can configure snippets,
+which can take that work away from us.
+-we go here in the menu
+into this Preferences submenu
+and then here we can define User Snippets.
+So click on that.
+prefix e cl dile cl likhlei console.log ashbe.

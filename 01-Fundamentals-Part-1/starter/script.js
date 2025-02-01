@@ -1,24 +1,25 @@
 //VALUES AND VARIABLES
 // LET = NEW VARIABLE
-/*let js = 'amazing';//--> logic
-      if (js==='amazing') alert('Javascript is fun!')
-       console.log(40 +8+23-10) ;//-->sysout
-     let firstName = "Jonas";
-     console.log(firstName);
-     let jonas_matilda ='JM';
-     let $function =27;
-     let Pi =3.1415;
-     let myFirstJob = 'Programmer';
-     let myCurrentJob = 'Teacher';
-     let job1 = 'Programmer';
-     let job2 = 'Teacher'; 
-     // first is better
-  //DATA TYPE
-// LET = NEW VARIABLE
+/*
+let js = "amazing"; //--> logic
+if (js === "amazing") alert("Javascript is fun!");
+console.log(40 + 8 + 23 - 10); //-->sysout
+let firstName = "Jonas";
+console.log(firstName);
+let jonas_matilda = "JM";
+let $function = 27; //(new and function is reserved keyword) (we can only use _ or $ in naming convention)
+let Pi = 3.1415;
+let myFirstJob = "Programmer";
+let myCurrentJob = "Teacher";
+let job1 = "Programmer";
+let job2 = "Teacher";
+// first is better
+//DATA TYPE
+//LET = NEW VARIABLE
 let javascriptIsFun = true;
-console.log(javascriptIsFun);
+console.log(javascriptIsFun);*/
 
- //console.log(typeof true);//--an operator which shows the type of the value
+/*console.log(typeof true);//--an operator which shows the type of the value
 console.log(typeof javascriptIsFun);
  //console.log(typeof 23);
  //console.log(typeof 'Jonas');

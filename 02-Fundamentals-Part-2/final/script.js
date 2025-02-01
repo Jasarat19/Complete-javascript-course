@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /*
 ///////////////////////////////////////
@@ -55,7 +55,7 @@ const age2 = calcAge2(1991);
 
 console.log(age1, age2);
 
-*/
+
 ///////////////////////////////////////
 // Arrow functions
 
