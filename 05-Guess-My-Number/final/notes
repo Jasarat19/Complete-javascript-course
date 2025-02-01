@@ -1,16 +1,70 @@
 'use strict';
-
+//in JavaScript, we can actually select this Element based on this class.
+//class name likhlei element ta select hoye jay
 /*
 console.log(document.querySelector('.message').textContent);
 document.querySelector('.message').textContent = '🎉 Correct Number!';
+//if it was an ID instead of a class, we would use the #
+// use the . if it is a class
+//this querySelector is basically a method that's available on the document object .
+//result of querySelector is an element.
+//first select the Element then on that Element,
+we can read the textContent property.
+And so that's why we use another . here
+and remember when we have multiple . operators,
+they are executed from left to right.
+/// .querySelector dile pura element tai print hobe ar .textContent hocche text ta print hobe!
+amra querySelector dile message class tha ke acces korsi than textContent use kore text takeh access korsi.
 
-console.log(document.querySelector('.message').textContent);
+// structure: document.queryselector('.className').textContent
+//DOM stands for Document Object Model, and it is,
+basically, a structured representation of HTML documents.
+The DOM allows us to use JavaScript to access HTML elements
+and styles in order to manipulate them.
+//we will be able to change text,  change HTML attributes and also change
+CSS styles from our JavaScript.
+////So we can say that DOM is basically a CONNECTION POINT
+between HTML documents and JavaScript code.
+//Now, the DOM is automatically created by the browser as soon as the HTML page loads.
+//it's stored in a tree structure ,each HTML element is one object.
+
+
+//document is a special object that we have access to, in JavaScript 
+this object serves as an entry point into the DOM.
+-the query selector method is available on the document object.
+-the first child element of document is usually the HTML element, because that's 
+usually the root element in all HTML documents
+-html er child HEAD, BODY
+-head er child title
+-body er child section, section child p element. eigula shob element 
+- a Dom tree actually has more than just element nodes.
+It also has nodes for all the text itself,
+comments and other stuff, because basically the rule is that
+whatever is in the HTML document also has to be in the DOM.
+-the DOM really is a complete representation of the HTML document
+-DOM ARE NOT PART OF JAVASCRIPT.
+-the DOM and DOM methods
+are actually part of something called the web APIs,Application Programming Interface. 
+
+So the web APIs are like libraries that browsers implement
+and that we can access from our JavaScript code
+
+
+///////Selecting and Manipulating Elements
+SETTING text
+document.querySelector('.message').textContent = '🎉 Correct Number!';
+//span is an HTML tag used to group and apply styles to inline-level element
 
 document.querySelector('.number').textContent = 13;
 document.querySelector('.score').textContent = 10;
-
+//with an input field,to get the actual value,we use the value property.
 document.querySelector('.guess').value = 23;
 console.log(document.querySelector('.guess').value);
+
+
+
+
+
 */
 
 let secretNumber = Math.trunc(Math.random() * 20) + 1;

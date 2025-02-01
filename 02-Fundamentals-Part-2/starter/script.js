@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /*
 ///////////////////////////////////////
@@ -149,54 +149,48 @@ console.log(ages);
 */
 ///////////////////////////////////////
 // Basic Array Operations (Methods)
-const friends = ['Michael', 'Steven', 'Peter'];
+const friends = ["Michael", "Steven", "Peter"];
 // Add elements
-const newLength = friends.push('Jay');//push methods add element tothe end of an array!
-console.log(friends);// push func returns length of array
+const newLength = friends.push("Jay"); //push methods add element tothe end of an array!
+console.log(friends); // push func returns length of array
 console.log(newLength);
-friends.unshift('John');//unshift methods add element tothe begining of an array!
+friends.unshift("John"); //unshift methods add element tothe begining of an array!
 console.log(friends);
 // Remove elements
 friends.pop(); // remove from Last
-const popped = friends.pop();// pop func returns removed element 
+const popped = friends.pop(); // pop func returns removed element
 console.log(popped);
 console.log(friends);
 
 friends.shift(); //remove from First
 console.log(friends);
 
-console.log(friends.indexOf('Steven'));
-console.log(friends.indexOf('Bob'));
+console.log(friends.indexOf("Steven"));
+console.log(friends.indexOf("Bob"));
 
 friends.push(23);
-console.log(friends.includes('Steven'));
-console.log(friends.includes('Bob'));
-console.log(friends.includes(23));// ('23') likhle false as it is testing with scrict equality with means it does not do type coersion 
+console.log(friends.includes("Steven"));
+console.log(friends.includes("Bob"));
+console.log(friends.includes(23)); // ('23') likhle false as it is testing with scrict equality with means it does not do type coersion
 
-if (friends.includes('Steven')) {// we can write includes method to write conditionals.
-  console.log('You have a friend called Steven'); 
+if (friends.includes("Steven")) {
+  // we can write includes method to write conditionals.
+  console.log("You have a friend called Steven");
 }
 ///////////////////////////////////////
 // Introduction to Objects
 const jonasArray = [
-  'Jonas',
-  'Schmedtmann',
+  "Jonas",
+  "Schmedtmann",
   2037 - 1991,
-  'teacher',
-  ['Michael', 'Peter', 'Steven']
+  "teacher",
+  ["Michael", "Peter", "Steven"],
 ];
 
 const jonas = {
-  firstName: 'Jonas',
-  lastName: 'Schmedtmann',
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
   age: 2037 - 1991,
-  job: 'teacher',
-  friends: ['Michael', 'Peter', 'Steven']
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
 };
-
-
-
-
-
-
-

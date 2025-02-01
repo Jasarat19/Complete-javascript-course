@@ -28,19 +28,19 @@ let myCurrentJob = "Teacher";
 let job1 = "programmer";
 let job2 = "teacher";
 
-console.log(myFirstJob);
+console.log(myFirstJob);*/
 
 ////////////////////////////////////
 // Data Types
-let javascriptIsFun = true;
+/* let javascriptIsFun = true;
 console.log(javascriptIsFun);
 
 // console.log(typeof true);
 console.log(typeof javascriptIsFun);
-// console.log(typeof 23);
-// console.log(typeof 'Jonas');
+console.log(typeof 23);
+console.log(typeof "Jonas");
 
-javascriptIsFun = 'YES!';
+javascriptIsFun = "YES!";
 console.log(typeof javascriptIsFun);
 
 let year;
@@ -50,11 +50,11 @@ console.log(typeof year);
 year = 1991;
 console.log(typeof year);
 
-console.log(typeof null);
+console.log(typeof null);*/
 
 ////////////////////////////////////
 // let, const and var
-let age = 30;
+/*let age = 30;
 age = 31;
 
 const birthYear = 1991;
@@ -91,7 +91,11 @@ x--;
 x--;
 console.log(x);
 
-// Comparison operators
+//Comparison operators
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+console.log(ageJonas, ageSarah);
 console.log(ageJonas > ageSarah); // >, <, >=, <=
 console.log(ageSarah >= 18);
 
@@ -173,11 +177,13 @@ lines`);
 
 
 ////////////////////////////////////
-// Taking Decisions: if / else Statements
+// Taking Decisions: if / else Statements 
 const age = 15;
+const isOldEnough = age >= 18;
+console.log(typeof(isOldEnough));
 
 if (age >= 18) {
-  console.log('Sarah can start driving license 🚗');
+  console.log("Sarah can start driving license 🚗");
 } else {
   const yearsLeft = 18 - age;
   console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
@@ -192,7 +198,6 @@ if (birthYear <= 2000) {
   century = 21;
 }
 console.log(century);
-*/
 
 ////////////////////////////////////
 // Coding Challenge #2
@@ -232,24 +237,26 @@ if (BMIMark > BMIJohn) {
 ////////////////////////////////////
 // Type Conversion and Coercion
 
-// type conversion
-const inputYear = '1991';
-console.log(Number(inputYear), inputYear);
-console.log(Number(inputYear) + 18);
+// type conversion 
+const inputYear = "1991";
+console.log(Number(inputYear), inputYear); //console e print hobe as a number
+console.log(Number(inputYear) + 18); // number dhore eitake addition kora hoise
 
-console.log(Number('Jonas'));
-console.log(typeof NaN);
+console.log(Number("Jonas")); // console e print hobe not a number NaN mane invalid number (when an operation that involves number fails to produce a new number).
+//console.log(typeof NaN);
 
-console.log(String(23), 23);
-
+console.log(String(23), 23); //string white color hobe ar number diff
+// we can only convert to a number, to a string, and to a boolean.
 // type coercion
-console.log('I am ' + 23 + ' years old');
-console.log('23' - '10' - 3);
-console.log('23' / '2');
+//similar as templete literal
+//So basically, type coercion happens whenever an operator is dealing with two values that have different types.So in that case, JavaScript will then, behind the scenes,convert one of the values to match the other value so that in the end,the operation can be executed.
+console.log("I am " + 23 + " years old");
+console.log("23" - "10" - 3);
+console.log("23" / "2");
 
-let n = '1' + 1; // '11'
+let n = "1" + 1; // '11'
 n = n - 1;
-console.log(n);
+console.log(n);*/
 
 ////////////////////////////////////
 // Truthy and Falsy Values
@@ -257,56 +264,58 @@ console.log(n);
 // 5 falsy values: 0, '', undefined, null, NaN
 console.log(Boolean(0));
 console.log(Boolean(undefined));
-console.log(Boolean('Jonas'));
+console.log(Boolean("Jonas"));
 console.log(Boolean({}));
-console.log(Boolean(''));
+console.log(Boolean(""));
 
 const money = 100;
 if (money) {
   console.log("Don't spend it all ;)");
 } else {
-  console.log('You should get a job!');
+  console.log("You should get a job!");
 }
 
 let height = 0;
 if (height) {
-  console.log('YAY! Height is defined');
+  console.log("YAY! Height is defined");
 } else {
-  console.log('Height is UNDEFINED');
-}*/
+  console.log("Height is UNDEFINED");
+}
 
 ////////////////////////////////////
 // Equality Operators: == vs. ===
-const age = '18';
-if (age === 18) console.log('You just became an adult :D (strict)');
+/*const age = "18";
+if (age === 18) console.log("You just became an adult :D (strict)");
 
-if (age == 18) console.log('You just became an adult :D (loose)');
+if (age == 18) console.log("You just became an adult :D (loose)");
 
 const favourite = Number(prompt("What's your favourite number?"));
 console.log(favourite);
 console.log(typeof favourite);
 
-if (favourite === 23) { // 22 === 23 -> FALSE,
-  console.log('Cool! 23 is an amzaing number!')
+if (favourite === 23) {
+  // 22 === 23 -> FALSE,
+  console.log("Cool! 23 is an amzaing number!");
 } else if (favourite === 7) {
-  console.log('7 is also a cool number')
+  console.log("7 is also a cool number");
 } else if (favourite === 9) {
-  console.log('9 is also a cool number')
+  console.log("9 is also a cool number");
 } else {
-  console.log('Number is not 23 or 7 or 9')
+  console.log("Number is not 23 or 7 or 9");
 }
 
-if (favourite !== 23) console.log('Why not 23?');
+if (favourite !== 23) console.log("Why not 23?");
 
 ////////////////////////////////////
 // Logical Operators
+
 const hasDriversLicense = true; // A
 const hasGoodVision = true; // B
 
 console.log(hasDriversLicense && hasGoodVision);
 console.log(hasDriversLicense || hasGoodVision);
 console.log(!hasDriversLicense);
-
+/*
 // if (hasDriversLicense && hasGoodVision) {
 //   console.log('Sarah is able to drive!');
 // } else {
@@ -321,7 +330,7 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 } else {
   console.log('Someone else should drive...');
 }
-
+*/
 
 ////////////////////////////////////
 // Coding Challenge #3
